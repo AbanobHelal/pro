@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(#200016, #10001f);
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 20px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  position: fixed;
+  margin: 30px;
+  z-index: 999;
+}
+.navbar .logo {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.navbar ul li {
+  margin-right: 10px;
+}
+.navbar ul li a {
+  padding: 6px 15px;
+  transition: 0.4s;
+}
+.navbar ul li a:hover,
+.active {
+  background: #ffffff;
+  color: #10001f;
+  border-radius: 10px;
+}
+.main {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.main::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(tp top, #200016, transparent);
+}
+.main img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+#moon {
+  mix-blend-mode: screen;
+  transform: translateY(80px);
+}
+.pop {
+  color: #ffffff;
+  font-size: 30px;
+  text-transform: uppercase;
+  transform: translateY(-130px);
+}
+.content{
+    color: #ffffff;
+    padding: 30px;
+}
+.content h2{
+    margin: 20px;
+    font-size: 30px;
+}
+.content p {
+    padding: 30px;
+}
